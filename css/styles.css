@@ -1,3 +1,20 @@
 .output {
   display: none;
+  font-weight: bold;
+
+}
+
+body {
+  font-family: sans-serif;
+  background-image: url("https://hdwallpaper20.com/wp-content/uploads/2017/07/Imagen-de-gravity-falls-pig-and-wallpaper-wallpaper-2.jpg")
+}
+
+.well{
+  border: transparent;
+  background-color:rgb(243,243,243,.9);
+}
+
+.jumbotron{
+  text-align: center;
+  background-color:rgb(243,243,243,.9);
 }

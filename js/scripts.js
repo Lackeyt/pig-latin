@@ -3,11 +3,19 @@ $(document).ready(function() {
 
   const vowels = ["a", "e", "i", "o", "u", "y"];
 
-  // Split string into an array of words
-  function wordArray(string) {
-    return string.split(" ");
-  }
-
+  //removes punctuation from a string
+  function removePunctuation(string){
+    let output = "";
+      for (i=0; i<string.length; i++){
+        if (string[i].match(/[a-zA-Z]/i) || string[i] === " "){
+          output += string[i];
+        } else {
+          string[i].replace();
+        };
+      };
+    return output;
+  };
+    
   // index of first Vowel
   function firstVowelIndex(string){
     if (string.charAt(0) === "y"){
@@ -49,10 +57,10 @@ $(document).ready(function() {
     };
   }
 
-// Single Word Output
+  // Single Word Output
   function translator(array){
-
     let sentence = [];
+
     array.forEach(function(element){
       let vowelPoint = firstVowelIndex(element);
       let wordHalfOne = element.slice(0, vowelPoint);
@@ -65,49 +73,17 @@ $(document).ready(function() {
         sentence.push(element + "way");
       };
     });
-    //for (i=0; i < array.length; i++) {
-    //  let vowelPoint = firstVowelIndex(array[0]);
-    //  let wordHalfOne = array[0].slice(0, vowelPoint);
-    //  let wordHalfTwo = array[0].slice(vowelPoint);
-//
-    //  if (isFirstVowelQU(array[0]) === true){
-    //    sentence.push(array[0].slice(vowelPoint + 1) + array[0].slice(0, vowelPoint + 1) + "ay");
-    //  } else if (vowelPoint > 0) {
-    //    sentence.push(wordHalfTwo + wordHalfOne + "ay");
-    //  } else if (vowelPoint === 0){  
-    //    sentence.push(array[0] + "way");
-    //  };
-    //};
     return sentence.join(" ");
   };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   //User Interface
-  
-
   $("#inputForm").submit(function(event) {
     event.preventDefault();
-
     const inputEnglish = $("#inputEnglish").val();
-    const wordArray = inputEnglish.split(" ")
-    const vowels = ["a", "e", "i", "o", "u", "y"];
-
+    const inputEnglishClean = removePunctuation(inputEnglish)
+    const wordArray = inputEnglishClean.split(" ")
     const output = translator(wordArray)
     $(".pigLatinOutput").text(output)
     $(".output").show()
-    
   });
 });
