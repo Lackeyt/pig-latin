@@ -5,22 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/styles.css">
-  <script src="js/jquery-3.4.1.js"></script>
+  <script src="js/jquery-3.5.1.js"></script>
   <script src="js/scripts.js" ></script>
   <title>Pig Latin Translator</title>
 </head>
 <body>
   <div class="input container-fluid">
-    <h1 class="jumbotron align-self-center">Pig Latin Translator</h1>
-    <form id="inputEnglish" class="well">
-      <label for="inputEnglish">Enter your english phrase:</label><br>
-      <input type="text" id="inputEnglish"><br><br>
+    <h1 class="jumbotron">Pig Latin Translator</h1>
+    <form id="inputForm" class="well">
+      <div class = "form-group">
+        <label for="inputEnglish">Enter your english phrase:</label><br>
+        <input type="text" class="form-control" id="inputEnglish">
+      </div>
       <button type="submit">Translate</button>
     </form>
+    <div class="output">
+      <p class="pigLatinOutput"></p>
+    </div>
   </div>
 
-  <div class="output">
-
-  </div>
+  
 </body>
 </html>

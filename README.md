@@ -3,18 +3,19 @@
 #### _{brief desc}_
 ##### __Created:__ 5/29/2020
 ##### __Last Updated:__ 6/3/2020 
-##### By _**Tyson Lackey**_  
+##### By _**Tyson Lackey and Thomas Glenn**_  
 
 
 
 | Spec| Example input | Example Output
 | ----------- | ----------- | ----------- |
-| the program will add "way" to the end of words beginning with a vowel | "I" | "I-way" |
-| the program will move all first consonants to the end and add "ay" | "way" | "ay-way" |
-| the program will move all first consecutive consonants to the end and add "ay" | "string" | "ing-stray" |
-| the program will move beginning 'qu' to the end and add "ay"| "quell" | ell-quway |
-| the program will also move beginning consecutive consonants with 'qu' to the end and add 'ay'| "squeal" | "eal-squay" |
-| the program will move beginning 'y' to the end (as it is a consonant in that circumstance)| "yes" | "es-yay" |
+| the program will do nothing to non-alphabetical characters. | 3 | 3 |
+| the program will add "way" to the end of words beginning with a vowel | "I" | "Iway" |
+| the program will move all first consonants to the end and add "ay" | "way" | "ayway" |
+| the program will move all first consecutive consonants to the end and add "ay" | "string" | "ingstray" |
+| the program will move beginning 'qu' to the end and add "ay"| "quell" | ellquway |
+| the program will also move beginning consecutive consonants with 'qu' to the end and add 'ay'| "squeal" | "ealsquay" |
+| the program will move beginning 'y' to the end (as it is a consonant in that circumstance)| "yes" | "esyay" |
 
 | the program will | 3 | 3 |
 | the program will | 3 | 3 |
