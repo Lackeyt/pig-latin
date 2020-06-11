@@ -1,8 +1,8 @@
 #  _Pig Latin Translator_
 
 #### _Changes English to Pig latin_
-##### __Created:__ 5/29/2020
-##### __Last Updated:__ 6/3/2020 
+##### __Created:__ 6/10/2020
+##### __Last Updated:__ 6/10/2020 
 ##### By _**Tyson Lackey and Thomas Glenn**_  
 
 
