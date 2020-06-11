@@ -1,11 +1,14 @@
-#  _{title}_
+#  _Pig Latin Translator_
 
-#### _{brief desc}_
+#### _Changes English to Pig latin_
 ##### __Created:__ 5/29/2020
 ##### __Last Updated:__ 6/3/2020 
 ##### By _**Tyson Lackey and Thomas Glenn**_  
 
 
+## Description
+
+_takes a user-inputted string and translates it to Pig latin using the following rules and logic. It also removes all punctuation from the input string.
 
 | Spec| Example input | Example Output
 | ----------- | ----------- | ----------- |
@@ -15,24 +18,7 @@
 | the program will move all first consecutive consonants to the end and add "ay" | "string" | "ingstray" |
 | the program will move beginning 'qu' to the end and add "ay"| "quell" | ellquway |
 | the program will also move beginning consecutive consonants with 'qu' to the end and add 'ay'| "squeal" | "ealsquay" |
-| the program will move beginning 'y' to the end (as it is a consonant in that circumstance)| "yes" | "esyay" |
-
-| the program will | 3 | 3 |
-| the program will | 3 | 3 |
-| the program will | 3 | 3 |
-| the program will | 3 | 3 |
-| the program will | 3 | 3 |
-| the program will | 3 | 3 |
-
-
-
-
-
-
-
-## Description
-
-_{detailed desc}_
+| the program will move beginning 'y' to the end (as it is a consonant in that circumstance)| "yes" | "esyay" |_
 
 ## Setup/Installation Requirements
 
@@ -48,8 +34,8 @@ _{detailed desc}_
 ##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open via Bash/GitBash:
 
 1. Clone this repository onto your computer:
-    "git clone {github repo URL}"
-2. Navigate into the "{project name}" directory in Visual Studio Code or preferred text editor:
+    "git clone https://github.com/Lackeyt/pig-latin"
+2. Navigate into the "pig-latin" directory in Visual Studio Code or preferred text editor:
 3. Open the projec
     "code ."
 3. Open index.html in your browser:
@@ -57,7 +43,7 @@ _{detailed desc}_
 
 ##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;View Directly in your Browser:
 
-* Navigate to {GH Pages URL} in your web browser.
+* n/a
 
 ## Known Bugs
 
